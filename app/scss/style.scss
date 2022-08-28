@@ -1,0 +1,51 @@
+@import '_vars';
+// @import '_reset';
+@import '_mixing';
+
+.wrapper{
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+
+// slider
+
+.slider__container{
+    overflow: hidden;
+    background-color: pink;
+}
+
+.slider__track{
+    display: flex;
+    background-color: yellow;
+    transition: .2s;
+}
+
+.slider__item{
+    height: 100px;
+    margin-right: 18px;
+
+    &:nth-child(1){
+        margin-left: 0;
+    }
+
+    &:nth-child(3n+1){
+        background-color: red;
+    }
+    &:nth-child(3n+2){
+        background-color: green;
+    }
+    &:nth-child(3n+3){
+        background-color: blue;
+    }
+}
+
+
+
+.slider__buttons{
+    text-align: center;
+}
+
+
+
